@@ -5,11 +5,12 @@ local utf8 = require("wraptext.utf8")
 local M = {}
 
 local zero_width_char = "\xe2\x80\x8b" -- \226\128\139
-zero_width_char = "*" -- debug
+-- zero_width_char = "*" -- debug
 
 local simplified_chinese_no_start = "!%),.:;?]}¢°·'\"†‡›℃∶、。〃〆〕〗〞﹚﹜！＂％＇），．：；？！］｝～"
 local simplified_chinese_no_end = "$(£¥·'\"〈《「『【〔〖〝﹙﹛＄（．［｛￡￥"
 
+-- the encoding of the end of the below line is weird on GitHub/browser, but looks fine in text editor
 local traditional_chinese_no_start = "!),.:;?]}¢·–— '\"• 、。〆〞〕〉》」︰︱︲︳﹐﹑﹒﹓﹔﹕﹖﹘﹚﹜！），．：；？︶︸︺︼︾﹀﹂﹗］｜｝､"
 local traditional_chinese_no_end = "([{£¥'\"‵〈《「『〔〝︴﹙﹛（｛︵︷︹︻︽︿﹁﹃﹏"
 
