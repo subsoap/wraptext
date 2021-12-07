@@ -1,0 +1,51 @@
+local wraptext = require("wraptext.wraptext")
+
+function init(self)
+	local text = "冒写冠冬冷凍処出刀分切刊列初判別 testing testing test test 利到制刷券刺刻則削前副割創劇力功加助努励労効勇勉動務勝勢勤勧包化北区医十"
+	--text = "冒"
+	--text = "………………………………a…b…c…… test …………………"
+	--text = "a     z"
+	text = label.get_text("#label")
+	
+	text = wraptext.filter(text)
+	
+	label.set_text("#label", text)
+	print(text)
+	
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Learn more: https://defold.com/manuals/script/
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Learn more: https://defold.com/manuals/message-passing/
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here. The game object this script is attached to
+	-- must have acquired input focus:
+	--
+	--    msg.post(".", "acquire_input_focus")
+	--
+	-- All mapped input bindings will be received. Mouse and touch input will
+	-- be received regardless of where on the screen it happened.
+	-- Learn more: https://defold.com/manuals/input/
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Learn more: https://defold.com/manuals/hot-reload/
+	-- Remove this function if not needed
+end
